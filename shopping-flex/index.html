@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-detail</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2>product-img</h2>
+        <div class="header__logo__container">
+            <div class="header__logo-bar">
+                <i class="far fa-flag"></i>
+                <h1><a href="#">BONFIRE</a></h1>
+                <button type="button">CART(3)</button>
+            </div>
+        </div>
+        <nav class="header__nav-bar">
+            <a href="#"><i class="fas fa-bars"></i></a>
+            <ul class="header__nav-bar__menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <div class="header__nav-bar__icons">
+                <a href="#"><i class="far fa-heart" id="heart"></i></a>
+                <!--구분선 이미지-->
+                <a href="#"><i class="fas fa-search" id="search"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main__section__product-img">
+            <img src="./assets/watermelon.jpg" alt="watermelon">
+            <div class="main__section__product-sub-img">
+                <img src="./assets/watermelon.jpg" alt="">
+                <img src="./assets/watermelon.jpg" alt="">
+                <img src="./assets/watermelon.jpg" alt="">
+                <img src="./assets/watermelon.jpg" alt="">
+            </div>
+        </section>
+        <aside class="main__aside__product-info">
+            <span class="main__aside__back-to-menu">
+                &lt;Back to <a href="#">Woman</a>
+            </span>
+            <h2>The Atelier Tailored Coat</h2>
+            <div class="main__aside__product-review">
+                <ul>
+                    <li><i class="fas fa-star color-yellow"></i></li>
+                    <li><i class="fas fa-star color-yellow"></i></li>
+                    <li><i class="fas fa-star color-yellow"></i></li>
+                    <li><i class="fas fa-star color-yellow"></i></li>
+                    <li><i class="fas fa-star color-yellow"></i></li>
+                </ul>
+                <span class="main__aside__product-review-count">
+                    3 Review(s)
+                </span>
+                <a href="#" class="main__aside__product-add-review">
+                    ADD A REVIEW
+                </a>
+            </div>
+            <strong>$499.00</strong>
+            <dl>
+                <div class="main__aside__product-availability">
+                    <dt>Availability</dt>
+                    <dd>In stock</dd>
+                </div>
+                <div class="main__aside__product-code">
+                    <dt>Product Code</dt>
+                    <dd>#4657</dd>
+                </div>
+                <div class="main__aside__product-tags">
+                    <dt>Tags</dt>
+                    <dd>Fashion, Hood, classic</dd>
+                </div>
+            </dl>
+            <p>
+                Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but-ton
+                Lazio suit features a notch lapel, flap pockets, and accompanying flat
+                front trousers-all in pure wool by Vitale Barberis Canonico.
+            </p>
+            <ul class="main__aside__product-detail">
+                <li>Dark blue suit for a tone-on-tone look</li>
+                <li>Regular fit</li>
+                <li>100% Cotton</li>
+                <li>Free shipping with 4 days delivery</li>
+            </ul>
+            <div class="main__aside__product-choose">
+                <div class="main__aside__product-color">
+                    <label for="product-color">COLOR</label>
+                    <select name="product-color" id="product-color">
+                        <option value="">Select Color</option>
+                        <option value="red">RED</option>
+                        <option value="yellow">YELLOW</option>
+                        <option value="green">GREEN</option>
+                    </select>
+                </div>
+                <div class="main__aside__product-size">
+                    <label for="product-size">SIZE</label>
+                    <select name="product-size" id="product-size">
+                        <option value="">Select Size</option>
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                </div>
+                <div class="main__aside__product-qty">
+                    <label for="product-qty">QTY</label>
+                    <select name="product-qty" id="product-qty">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <a href="#" class="main__aside__product-choose-clear">
+                CLEAR SELECTION
+            </a>
+            <div class="main__aside__product-add-button">
+                <button type="button" class="main__aside__product-add-cart">
+                    ADD TO CART
+                </button>
+                <button type="button" class="main__aside__product-add-wishlist">
+                    ADD TO WISH LIST
+                </button>
+            </div>
+            <div class="main__aside__product-share-sns">
+                <span>SHARE THIS</span>
+                <a href="#"><i class="fab fa-facebook-square color-blue"></i></a>
+                <a href="#"><i class="fab fa-twitter color-blue"></i></a>
+                <a href="#"><i class="fab fa-instagram color-pink"></i></a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <span>&copy;se9oo</span>
+    </footer>
+</body>
+</html>

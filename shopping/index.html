@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Detail</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="shop-header">
+            <div class="shop-header-content">
+                <div class="shop-header-choose-language">
+                    <i class="far fa-flag"></i>
+                    <select name="language-box" id="language-box">
+                        <option value="eng" aria-label="selected english">English</option>
+                        <option value="ko" aira-label="selected korean">Korean</option>
+                    </select>
+                </div>
+                <h1 class="shop-header-title">
+                    <a href="#">BONFIRE</a>
+                </h1>
+                <button type="button" class="shop-header-user-cart">
+                    CART(3)
+                </button>
+            </div>
+        </header>
+        <nav class="nav-menu-bar">
+            <div class="nav-menu-bar-content">
+                <a href="#"><i class="fas fa-bars" id="bars"></i></a>
+                <ul class="nav-main-menu-bar clearfix">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">LOOKBOOK</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+                <a href="#"><i class="far fa-heart" id="heart"></i></a>
+                <!--구분선 이미지-->
+                <a href="#"><i class="fas fa-search" id="search"></i></a>
+            </div>
+        </nav>
+        <main>
+            <div class="main-container clearfix">
+                <section class="content-main-image">
+                    <img src="./assets/watermelon.jpg" alt="Water melon" class="main-image">
+                    <div class="content-sub-image">    
+                        <img src="./assets/watermelon.jpg" alt="">
+                        <img src="./assets/watermelon.jpg" alt="">
+                        <img src="./assets/watermelon.jpg" alt="">
+                        <img src="./assets/watermelon.jpg" alt="">
+                    </div>
+                </section>
+                <aside class="content-info">
+                    <span class="content-info-back-to-menu">&lt;Back to <a href="#">Women</a></span>
+                    <h2>Very Sweet Watermelon</h2>
+                    <div class="content-star clearfix">
+                        <ul class="clearfix">
+                            <li><i class="fas fa-star bgcolor-yellow"></i></li>
+                            <li><i class="fas fa-star bgcolor-yellow"></i></li>
+                            <li><i class="fas fa-star bgcolor-yellow"></i></li>
+                            <li><i class="fas fa-star bgcolor-yellow"></i></li>
+                            <li><i class="fas fa-star bgcolor-yellow"></i></li>
+                        </ul>
+                        <span>3Reviews(3)</span>
+                        <span>|</span>
+                        <span><a href="#">ADD A REVIEW</a></span>
+                    </div>
+                    <strong class="content-price">$499.00</strong>
+                    <div class="content-info-detail">
+                        <dl class="clearfix">
+                            <div>
+                                <dt>Availability</dt>
+                                <dd><a href="#">In stock</a></dd>
+                            </div>
+                            <div>
+                                <dt>Product Code</dt>
+                                <dd><a href="#">#4657</a></dd>
+                            </div>
+                            <div>
+                                <dt>Tags</dt>
+                                <dd>
+                                    <a href="#">Fashion</a>,
+                                    <a href="#">Hood</a>,
+                                    <a href="#">Classic</a>
+                                </dd>
+                            </div>
+                        </dl>
+                        <div class="content-info-desc">
+                            <p>
+                                Watermelon (Citrullus lanatus) is a plant species in the family Cucurbitaceae, a vine-like flowering plant originally domesticated in West Africa. It is a highly cultivated fruit worldwide, having more than 1000 varieties.
+                            </p>
+                            <ul>
+                                <li>Dark blue suit for a tone-on-tone look</li>
+                                <li>Regular fit</li>
+                                <li>100% Cotton</li>
+                                <li>Free shipping with 4 days delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

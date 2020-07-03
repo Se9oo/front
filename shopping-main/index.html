@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall - Main</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner">
+                <div class="banner__user">
+                    <a href="#">Log in</a>
+                    <span>or</span>
+                    <a href="#">Register</a>
+                </div>
+                <h1>MONICA</h1>
+                <i class="fas fa-bars banner__menu-bar"></i>
+                <div class="banner__search-box">
+                    <input type="text" class="banner__search" placeholder="Search Product...">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+            <nav>
+                <div class="banner__gnb">
+                    <ul class="banner__gnb-menu">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                    <ul class="banner__icons">
+                        <li><a href="#"><i class="fas fa-user banner__user-icon"></i></a></li>
+                        <li><a href="#"><i class="fas fa-search banner__search-icon"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <!-- main image -->
+            <article>
+                <div class="article__main-image">
+                    <h2>
+                        2020 <strong class="strong-new">NEW</strong><br/>
+                        <strong class="strong-collection">Collection</strong>
+                    </h2>
+                    <p>
+                        New colors and creative prints!
+                    </p>
+                    <a href="#">SHOP NOW</a>
+                </div>
+            </article>
+        
+            <!-- product card -->
+            <div class="article__product-card">
+                <article class="article__product-card-info">
+                    <h2>Denim shorts in slim fit</h2>
+                    <h3>shorts</h3>
+                    <img src="./assets/slim-denim-pants.jpg" alt="Slim Denim pants">
+                    <strong>$124</strong>
+                </article>
+
+                <article class="article__product-card-info">
+                    <h2>New Look Chino Shorts</h2>
+                    <h3>shorts</h3>
+                    <img src="./assets/New-Look-Chino-Shorts.jpg" alt="New Look Chino Shorts">
+                    <strong>$76</strong>
+                </article>
+
+                <article class="article__product-card-info">
+                    <h2>Bellfield Chino</h2>
+                    <h3>shorts</h3>
+                    <img src="./assets/Bellfield-Chino-Shorts.jpg" alt="Bellfield Chino Shorts">
+                    <strong>$92</strong>
+                </article>
+
+                <article class="article__product-card-info">
+                    <h2>Jack&Jones<br/>Chino Shorts</h2>
+                    <h3>shorts</h3>
+                    <img src="./assets/Jack-Jones-Chino-shorts.jpg" alt="Jack Jones Chino shorts">
+                    <strong>$117</strong>
+                </article>
+            </div>
+
+            <div class="article__product-card-horizontal">
+                <article>
+                    <img src="./assets/Marco-Polo.jpg" alt="Marco Polo Shirts">
+                    <div class="article__product-card-horizontal-detail">
+                        <span>Skirt</span>
+                        <h2>Marco Polo</h2>
+                        <strong class="article__product-card-horizontal-detail__origin-price">
+                            $83
+                        </strong>
+                        <strong class="article__product-card-horizontal-detail__price">
+                            $66
+                        </strong>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/Blue-Montana.jpg" alt="Blue Montana Shirts">
+                    <div class="article__product-card-horizontal-detail">
+                        <span>Skirt</span>
+                        <h2>Blue Montana</h2>
+                        <strong class="article__product-card-horizontal-detail__origin-price display-none">
+                        </strong>
+                        <strong class="article__product-card-horizontal-detail__price">
+                            $48
+                        </strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="section__about-us">
+                <h2>ABOUT US</h2>
+                <p>
+                    With over a decade of experience, we have helped our clients all over the world to create<br/>
+                    eye-catching and head-turning creative solutions.<br/>
+                    We work together from our three UK offices to create high quality work.
+                </p>
+                <a href="#">
+                    READ MORE
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

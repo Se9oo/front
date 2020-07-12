@@ -1,0 +1,614 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button,input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDDED8;
+}
+
+.Landing h1 {
+    display: block;
+    font-size: 4rem;
+    color: #2b292d;
+    line-height: 1;
+    padding: 0 1.5rem 2.4rem 1.5rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+.Landing h2 {
+    padding: 0 1.5rem 2.4rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.375;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.Landing__btnGrp {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+.btnGrp__applyBtn {
+    padding: 1.2rem 3.5rem;
+    margin-right: .8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3040c4;
+    border-radius: .2rem;
+}
+
+.btnGrp__LearnMoreBtn {
+    padding: 1.2rem 3.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    color: #3040C4;
+    background-color: #ffffff;
+}
+
+.Testimonials {
+    background-color: #F4F5F7;
+}
+
+.Testimonials section:first-child {
+    display: block;
+    padding: 8rem 1.5rem 0 1.5rem;
+}
+
+.Testimonials section:nth-child(2) {
+    display: block;
+    padding: 4rem 1.5rem;
+}
+
+.Testimonials section > h1 {
+    font-size: 2.2rem;
+    line-height: 1.363636363636364;
+    letter-spacing: -0.04em;
+}
+
+.Testimonials section > p {
+    display: block;
+    padding: 1.6rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.program {
+    display: block;
+    padding: 8rem 1.5rem 0 1.5rem;
+}
+
+.program--info {
+    display: block;
+    padding-bottom: 3.2rem;
+}
+
+.program--info__category {
+    display: block;
+    padding-bottom: .8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #009B4D;
+}
+
+.program--info > h1 {
+    display: block;
+    padding-bottom: 2.4rem;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.058823529411765;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #2b292d;
+}
+
+.program--info > p {
+    display: block;
+    padding-bottom: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
+.programs--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.programs--list li {
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.programs--list li > img {
+    display: block;
+    width: 100%;
+    padding: 2.4rem 7.4rem 1.6rem 7.4rem;
+}
+
+.programs--list li > h3 {
+    display: block;
+    padding-bottom: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.333333333333333;
+    text-align: center;
+}
+
+.curriculum {
+    display: block;
+    padding: 8rem 1.5rem 0 1.5rem;
+}
+
+.curriculum img {
+    display: none;
+}
+
+.curriculum__header {
+    display: block;
+    margin-bottom: 4.8rem;
+}
+
+.curriculum__header strong{
+    display: block;
+    padding-bottom: .8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #0189d1;
+}
+
+.curriculum__header h2 {
+    display: block;
+    padding-bottom: 2.4rem;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.058823529411765;
+    letter-spacing: -0.03em;
+}
+
+.curriculum__header p {
+    display: block;
+    padding-bottom: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
+.curriculum__header button {
+    display: block;
+    padding: 1.2rem 3.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    background-color: #3040C4;
+    border-radius: .2rem;
+}
+
+.curriculum__details p {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.466666666666667;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
+.curriculum__details p:first-child {
+    padding-bottom: 4rem;
+}
+
+.curriculum__details p:last-child {
+    padding-bottom: 8rem;
+}
+
+.banner {
+    display: block;
+    padding: 4rem 1.5rem 0 1.5rem;
+    background-color: #f2f8fa;
+}
+
+.banner__img {
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.banner__img img {
+    width: 100%;
+    display: block;
+    padding: 2.5rem 4.9rem;
+}
+
+.banner__header {
+    display: block;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.banner__header h2{
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2b292d;
+}
+
+.banner__header p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
+.banner__form input {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: .8rem;
+    outline: none;
+    border: none;
+}
+
+.banner__form button {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 10.6rem;
+    margin-bottom: .8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3040C4;
+}
+
+.banner__form span {
+    display: block;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    line-height: 1.538461538461538;
+    text-align: center;
+    color: #7b7b7e;
+}
+
+.banner__form span > a {
+    color: #3040c4;
+}
+
+footer {
+    width: 100%;
+    padding: 2.4rem 1.5rem;
+}
+
+footer > ul > li {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+    line-height: 1.714285714285714;
+    letter-spacing: -0.01em;
+    color: #807f81;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+
+    .Testimonials {
+        width: 100%;
+        padding: 4rem 12.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Testimonials section:first-child {
+        margin-right: 5.5rem;
+        padding: 0;
+    }
+    
+    .Testimonials section:nth-child(2) {
+        padding: 0;
+    }
+    
+    .Testimonials section > h1 {
+        margin-bottom: .8rem;
+        font-size: 1.3rem;
+        line-height: 1.307692307692308;
+    }
+    
+    .Testimonials section > p {
+        padding: 0;
+        font-size: 1.1rem;
+        line-height: 1.454545454545455;
+    }
+
+    .program {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .program--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3.2rem;
+    }
+
+    .program--info__category {
+        margin-bottom: .8rem;
+        font-size: 1.1rem;
+        line-height: 1.090909090909091;
+    }
+
+    .program--info > h1 {
+        padding-bottom: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+
+    .program--info > p {
+        max-width: 38.5rem;
+        padding-bottom: 0;
+        font-size: 1.1rem;
+        line-height: 1.454545454545455;
+        text-align: center;
+    }
+
+    .programs--list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12.75rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .programs--list li {
+        width: 14.5rem;
+        height: 15rem;
+        margin-right: 1.5rem;
+        margin-bottom: 0;
+        border-radius: .8rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    .programs--list li:first-child > img {
+        padding: 1.2rem 3.7rem 1.2rem 3.7rem;
+    }
+
+    .programs--list li:nth-child(2) > img {
+        padding: 1.2rem 3.6rem 1.2rem 3.6rem;
+    }
+
+    .programs--list li:nth-child(3) > img {
+        padding: 1.2rem 4.2rem 1.2rem 4.2rem;
+    }
+    
+    .programs--list li > h3 {
+        padding-bottom: 1.6rem;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .curriculum {
+        padding: 4rem 12.75rem 4.8rem 12.75rem;
+    }
+
+    .curriculum__header__container {
+        display: flex;
+        margin-bottom: 3.3rem;
+    }
+
+    .curriculum__header__container img {
+        display: block;
+        width: 50%;
+    }
+
+    .curriculum__header {
+        margin-right: 1.5rem;
+    }
+
+    .curriculum__header strong{
+        font-size: 1.1rem;
+        line-height: 1.090909090909091;
+    }
+
+    .curriculum__header h2 {
+        padding-bottom: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+
+    .curriculum__header p {
+        padding-bottom: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.454545454545455;
+    }
+
+    .curriculum__header button {
+        padding: .7rem 1.75rem;
+        font-size: .8rem;
+        line-height: 1.555555555555556;
+    }
+
+    .curriculum__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .curriculum__details p {
+        max-width: 48%;
+        font-size: .8rem;
+        line-height: 1.444444444444444;
+    }
+
+    .curriculum__details p:first-child {
+        padding-bottom: 0;
+    }
+    
+    .curriculum__details p:last-child {
+        padding-bottom: 0;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 12.75rem 4rem 12.75rem;
+    }
+
+    .banner__img {
+        width: 50%;
+        margin-bottom: 1.6rem;
+    }
+
+    .banner__img img {
+        width: 100%;
+        padding: .4rem 4.15rem .4rem 0;
+        margin-right: .4rem;
+    }
+
+    .banner__content {
+        width: 50%;
+    }
+
+    .banner__header {
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
+
+    .banner__header h2{
+        margin-bottom: .8rem;
+        font-size: 2rem;
+    }
+
+    .banner__header p {
+        font-size: 1.1rem;
+        line-height: 1.454545454545455;
+        margin-bottom: 0;
+    }
+
+    .banner__form--content {
+        display: flex;
+    }
+
+    .banner__form input {
+        width: 60%;
+        height: 2.8rem;
+        padding: .8rem;
+        margin-right: .4rem;
+        margin-bottom: .8rem;
+    }
+
+    .banner__form button {
+        width: 40%;
+        padding: .5rem 1.4rem;
+        margin-bottom: .8rem;
+        font-size: .9rem;
+        line-height: 1.333333333333333;
+        border-radius: .1rem;
+    }
+
+    .banner__form span {
+        font-size: .7rem;
+        line-height: 1.714285714285714;
+        text-align: left;
+    }
+
+    footer > ul {
+        display: flex;
+    }
+    
+    footer > ul > li {
+        margin-right: .8rem;
+        margin-bottom: 0;
+        font-size: .7rem;
+    }
+}

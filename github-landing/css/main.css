@@ -11,6 +11,10 @@
     color: #333333;
 }
 
+a {
+    text-decoration: none;
+}
+
 input {
     font-family: 'Roboto', sans-serif;
 }
@@ -28,6 +32,7 @@ input {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
+    color: #333333;
     cursor: pointer;
 }
 
@@ -74,4 +79,54 @@ input {
 /* Mozila */
 .input--text::-moz-input-placeholder {
     color:#cacaca;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid rgba(0,0,0,.75);
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+    background: #ffffff
+}
+
+header .inner {
+    max-width: 980px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+header .menu-group {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 10px;
+}
+
+header .logo a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-image: url('../img/logo.svg');
+    text-indent: -9999px;
+}
+
+header .logo a:hover {
+    background-image: url(../img/logo_on.svg);
+    transition: background-image 150ms ease-in;
+}
+
+header .main-menu {
+    display: flex;
+}
+
+header .main-menu li > a {
+    display: block;
+    padding: 10px;
+    color: #3c4146;
+}
+
+header .main-menu li > a:hover {
+    color : #4078c0
 }

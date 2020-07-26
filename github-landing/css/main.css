@@ -19,6 +19,51 @@ input {
     font-family: 'Roboto', sans-serif;
 }
 
+/* float clearfix */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
+}
+
+/* summary */
+.summary {
+
+}
+
+.summary__title {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.summary__description {
+    font-size: 26px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.5;
+}
+
+/* section & inner */
+.section {
+    position: relative;
+}
+
+.section .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
 /* button */
 .btn {
     height: 34px;
@@ -89,9 +134,7 @@ header {
 }
 
 header .inner {
-    max-width: 980px;
     height: 78px;
-    margin: 0 auto;
 }
 
 header .menu-group {
@@ -129,4 +172,84 @@ header .main-menu li > a {
 
 header .main-menu li > a:hover {
     color : #4078c0
+}
+
+header .sign-group {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header .btn-group {
+    display: flex;
+    order: 2;
+}
+
+header .btn-group .sign-in {
+    margin-right: 4px;
+}
+
+#search-form {
+    order: 1;
+    margin-right: 12px;
+}
+
+#search {
+    width: 160px;
+    font-size: 14px;
+}
+
+#search + [type="submit"] {
+    display: none;
+}
+
+header .sub-menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+header .sub-menu li a {
+    display: block;
+    padding: 8px;
+    font-size: 13px;
+    color: #3c4146;
+}
+
+header .sub-menu li a:hover {
+    color: #4078c0;
+}
+
+/* visual */
+.section--visual {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+.section--visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
+.section--visual .inner {
+    padding: 160px 0;
+}
+
+.section--visual .summary__title {
+    font-size: 54px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                 0 1px 25px rgba(0,0,0,.75);
+}
+
+.section--visual .summary__description {
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                 0 1px 25px rgba(0,0,0,.75);
 }
